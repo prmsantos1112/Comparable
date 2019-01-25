@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import services.BrazilInterestService;
+import services.InterestService;
 
 public class ProgramDefaultMethod {
 
@@ -18,7 +19,7 @@ public class ProgramDefaultMethod {
 		System.out.print("Months: ");
 		int months = sc.nextInt();
 		
-		BrazilInterestService interEst = new BrazilInterestService(2.0);
+		InterestService interEst = new BrazilInterestService(2.0);
 		double payment = interEst.payment(amount, months);
 		
 		System.out.println("Payment After " + months + "months: ");
